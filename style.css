@@ -1,0 +1,36 @@
+.centerGrid {
+    margin: 25%;
+    display: grid;
+    width: 600px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "sedans suv luxury";
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    padding: 20px;
+    grid-area: sedans;
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%);
+    padding: 20px;
+    grid-area: suv;
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    grid-area: luxury;
+}
+
+#sedansHeading, #suvHeading, #luxuryHeading {
+    padding: 15px;
+}
+
+
+.learnMore {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 50px;
+    display: inline-flex;
+}
